@@ -1,7 +1,7 @@
 // This module is a hack to make YNOonline prompts work with Electron.
 // There's probably a better way to do this.
 
-module.exports = function (win) {
+export default function (win) {
   win.webContents.executeJavaScript(`
     var poll = setInterval(function() {
       if (document.title === "Yume Nikki Online Project") {

@@ -1,6 +1,6 @@
-const DiscordRPC = require("discord-rpc");
+import DiscordRPC from 'discord-rpc';
 
-const mappedIcons = [
+export const mappedIcons = [
   "amillusion",
   "answeredprayers",
   "braingirl",
@@ -28,7 +28,7 @@ const mappedIcons = [
   "collectiveunconscious",
 ];
 
-const isConnected = (text) => {
+export const isConnected = (text) => {
   const privatemodes = [
     "وضع الخاص",
     "Private Mode",
@@ -67,14 +67,14 @@ const isConnected = (text) => {
   return privatemodes.includes(text) || connecteds.includes(text);
 };
 
-const retryConnection = (client, err) => {
+export const retryConnection = (client, err) => {
   console.log("Retry IPC");
   console.log(err);
   client = new DiscordRPC.Client({ transport: "ipc" });
   client.login({ clientId: "1028080411772977212" }).catch(console.error);
 };
 
-const updatePresence = (web, client, gamename = null) => {
+export const updatePresence = (web, client, gamename = null) => {
   if (!client) return;
   
   console.log("Update Presence");
@@ -156,8 +156,4 @@ const updatePresence = (web, client, gamename = null) => {
           .catch((err) => retryConnection(client, err));
       });
   }
-};
-
-module.exports = {
-  updatePresence,
 };

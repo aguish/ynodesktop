@@ -1,4 +1,4 @@
-const { contextBridge, ipcRenderer, webFrame } = require("electron");
+import { contextBridge, ipcRenderer, webFrame } from 'electron';
 
 contextBridge.exposeInMainWorld("electronAPI", {
   minimize: () => ipcRenderer.send("minimize"),

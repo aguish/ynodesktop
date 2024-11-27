@@ -2,7 +2,8 @@
   "name": "ynodesktop",
   "version": "1.2.2",
   "description": "A Yume Nikki Online desktop client with optional Discord Rich Presence",
-  "main": "src/main.js",
+  "main": "src/main.mjs",
+  "type": "module",
   "scripts": {
     "start": "electron .",
     "start-nodrpc": "electron src/main-nodrpc.js",
@@ -15,8 +16,8 @@
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.4.0",
-    "electron": "^29.1.4",
-    "electron-builder": "^24.13.3",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
     "eslint": "9.x",
     "globals": "^15.4.0"
   },
@@ -52,5 +53,6 @@
   },
   "optionalDependencies": {
     "discord-rpc": "^4.0.1"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

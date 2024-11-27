@@ -1,4 +1,4 @@
-module.exports = function (win) {
+export default function (win) {
   win.webContents
     .executeJavaScript(
       `
