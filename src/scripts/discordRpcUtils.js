@@ -25,6 +25,9 @@ const mappedIcons = [
   "oversomnia",
   "yumetsushin",
   "nostalgic",
+  "oneshot",
+  "if",
+  "unnacomplished",
   "collectiveunconscious",
 ];
 
