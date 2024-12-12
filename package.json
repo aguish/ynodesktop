@@ -10,7 +10,8 @@
     "dist": "electron-builder",
     "dir-nodrpc": "electron-builder --dir",
     "dist-nodrpc": "electron-builder -c.appId=ynodesktop-nodrpc -c.productName=YNOdesktop-NoDRPC",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release-notes": "node generateReleaseNotes.js"
   },
   "author": "jvbf, abbey, foundationkitty <61197745+aguish@users.noreply.github.com>",
   "license": "MIT",
