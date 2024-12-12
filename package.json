@@ -12,7 +12,7 @@
     "dist-nodrpc": "electron-builder -c.appId=ynodesktop-nodrpc -c.productName=YNOdesktop-NoDRPC",
     "lint": "eslint ."
   },
-  "author": "jvbf, abbey, foundationkitty",
+  "author": "jvbf, abbey, foundationkitty <61197745+aguish@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.15.0",
@@ -33,7 +33,9 @@
       "target": [
         "AppImage",
         "deb"
-      ]
+      ],
+      "category": "Game",
+      "icon": "assets/logo.png"
     },
     "win": {
       "target": [
