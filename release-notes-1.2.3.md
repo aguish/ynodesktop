@@ -2,6 +2,7 @@
 
 ## Changes between 1.2.2 and 1.2.3
 
+- 5d1db23 added an easy way to generate release notes
 - 3cf5500 Merge pull request #4 from foundationkitty/pr4-linuxfix
 - a1624ae fix linux build
 - 4053fd9 Refactor context menu, preload scripts, and Discord Rich Presence logic
